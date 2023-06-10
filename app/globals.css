@@ -6,6 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --primary-main: #FF6464;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,3 +26,15 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.link {
+  color: black;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.link:hover , .active {
+  text-decoration: underline;
+  color : var(--primary-main);
+}
+
